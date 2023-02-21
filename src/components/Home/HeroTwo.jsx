@@ -9,7 +9,7 @@ const HeroTwo = () => {
 
 
   return (
-    <>
+    <> 
       <div className="flex gap-2 bg-white rounded-3xl container w-max p-2 mx-8 my-8 border-2 shadow-md">
         <i
           onClick={() => setColor(!color)}
