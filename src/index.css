@@ -14,7 +14,8 @@
   /*========== Font and typography ==========*/
   :root{
   --body-font: "Poppins", sans-serif;
-  --bg-color:linear-gradient(to right, #f83600, #fe8c00);
+  --bg-color:white;
+  --text-color:black;
 
   }
 
@@ -30,98 +31,6 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
-body{
-  font-family: var(--body-font);
-  color: white;
-  background: var(--bg-color) !important;
-
-}
-body[data-theme="light-theme"] {
-  --bg-color: linear-gradient(to right, #f83600, #fe8c00);;
-}
-
-
-body[data-theme="dark-theme"] {
-  --bg-color: #000000c9;
-  --text-color:white;
-}
-
-body[data-theme="sea-theme"] {
-  --bg-color:linear-gradient(to right, #7f00ff, #e100ff);
-  --text-color:white;
-
-}
-
-body[data-theme="sharp-theme"] {
-  --bg-color:linear-gradient(to right, #c0392b, #8e44ad);
-  --text-color:white;
-
-}
-        
-body[data-theme="green-theme"] {
-  --bg-color: linear-gradient(to right, #00f260, #0575e6);
-  --text-color:white;
-
-}
-
-
-#hero-btn1{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    background:linear-gradient(to right, #f83600, #fe8c00);;
-    border: 1px solid black ;
-}
-
-#hero-btn2{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    background-color: black;
-}
-
-#hero-btn3{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    background: linear-gradient(to right, #7f00ff, #e100ff);
-}
-
-#hero-btn4{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    background: linear-gradient(to right, #c0392b, #8e44ad);
-}
-
-#hero-btn5{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    background: linear-gradient(to right, #00f260, #0575e6);
-}
-
 
 ul {
   list-style: none;
@@ -156,7 +65,7 @@ section{
 .main-title {
   text-transform: uppercase;
   margin: 0 auto 80px;
-  border: 2px solid white;
+  border: 2px solid black;
   padding: 10px 20px;
   font-size: 30px;
   width: fit-content;
@@ -168,12 +77,13 @@ section{
   -ms-transition: ease .4;
   -o-transition: ease .4;
 }
+
 .main-title::before,
 .main-title::after {
   content: "";
   width: 12px;
   height: 12px;
-  background-color: white;
+  background-color: black;
   position: absolute;
   border-radius: 50%;
   top: 50%;
@@ -194,7 +104,7 @@ section{
   animation: right-move 0.5s linear forwards;
 }
 .main-title:hover {
-  color: black;
+  color: white;
   border: 2px solid black;
   transition-delay: 0.5s;
 }
@@ -289,3 +199,67 @@ button, [type='button']:hover{
   
 }
 
+.line__color{
+  background-color: var(--text-color);
+}
+
+.line__col{
+  background: var(--text-color);
+  color:var(--bg-color);
+}
+
+
+.proje{
+  position: relative;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  z-index: 7;
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -ms-transition: .5s ease;
+  -o-transition: .5s ease;
+}
+.proje:hover .overlay {
+  opacity: .8;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.text{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  
+}
+
+.text a{
+   background-color: white;
+  padding: 10px 40px;
+  border-radius: 5px;
+  color: black;
+  margin-top: 1rem;
+  display: inline-block;
+  z-index: 9999;
+}

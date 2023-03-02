@@ -10,7 +10,7 @@ window.addEventListener(`scroll`, () => {
   return (
       <a
         href="#Home"
-        className="  scroll w-max bg-black block py-1 px-1 z-10 fixed  right-12  -bottom-1/4 flex rounded-lg gap-3 text-white text-2xl transition-all "
+        className="  scroll w-max bg-black block py-1 px-1 z-10 fixed  right-12 max-md:right-2  -bottom-1/4 flex rounded-lg gap-3 text-white text-2xl transition-all "
       >
         <i class="uil uil-arrow-up"></i>
       </a>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import ButtonTop from "./components/ButtonTop";
+import ButtonTop from "./components/Model/ButtonTop";
 import Loader from "./components/Loader/Loader";
 import About from "./Page/About";
 import Contact from "./Page/Contact";
