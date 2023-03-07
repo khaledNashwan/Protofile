@@ -5,7 +5,7 @@
 const Footer = () => {
 
   return (
-    <div className=" pt-16  sm:max-w-2xll md:max-w-full lg:max-w-screen-xxl md:px-24 lg:px-8 line__col mb-0 max-md:px-3 ">
+    <div className=" pt-16  sm:max-w-2xll md:max-w-full lg:max-w-screen-xxl md:px-24 lg:px-8 footer__color mb-0 max-md:px-3 ">
       <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
         <div className="sm:col-span-2">
           <a
@@ -48,7 +48,9 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <span className="text-base font-bold tracking-wide ">Social</span>
+          <span className="text-base font-bold tracking-wide">
+            Social
+          </span>
           <div className="flex items-center mt-1 space-x-3">
             <a
               href="https://twitter.com/khaled97nash"

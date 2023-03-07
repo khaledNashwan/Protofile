@@ -6,15 +6,16 @@ import "./hero.css";
 import HeaderSocials from "./HeaderSocials";
 import Nav from "../Nav/Nav";
 
+
 const Hero = () => {
   return (
     <>
       <section id="Home">
         <div className="flex justify-center items-center gap-12 max-lg:flex-col-reverse  mx-12  max-md:text-center">
           <div>
-            <h1 className="font-extrabold flex items-center gap-4 text-3xl">
+            <h1 className="font-extrabold flex items-center gap-4 text-3xl animate__animated animate__swing">
               Khaled Nashwan
-              <img src={hand} alt="welcome" />
+              <img src={hand} alt="welcome" className="shake-lr" />
             </h1>
             <div className="flex justify-start items-center">
               <div>

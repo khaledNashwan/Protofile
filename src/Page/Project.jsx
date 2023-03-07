@@ -15,7 +15,7 @@ const Project = () => {
   return (
     <div className="proj" id="Project">
       <SectionHeader sectionHeader="Project" />
-      <div className="container px-5 py-24 mx-auto flex justify-center gap-6 max-lg:gap-16 flex-wrap">
+      <div className="container  mx-auto flex justify-center  max-lg:gap-16 ">
         <Pro
           img={phote1}
           aaa="https://melodic-peony-69640d.netlify.app/"
@@ -42,6 +42,8 @@ const Project = () => {
           aaa="https://khaledwebsite2.netlify.app/"
           desc="landing page with responsive design "
         />
+
+        
       </div>
     </div>
   );

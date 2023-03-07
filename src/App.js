@@ -15,6 +15,7 @@ function App() {
        setLoading(false);
      }, 3000);
    }, []);
+  
    
   return (
     <>

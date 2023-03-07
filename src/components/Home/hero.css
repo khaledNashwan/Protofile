@@ -1,10 +1,10 @@
 
   .img_anmi{
-    position: relative;
+  position: relative;
   animation: up-and-down 5s linear infinite;
   width: 500px;
-
-  }
+  -webkit-animation: up-and-down 5s linear infinite;
+}
 
   @keyframes up-and-down {
   0%,

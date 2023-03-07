@@ -5,9 +5,8 @@
 
 }
 .dark{
-    
-    background-color: #1a1919;
-    color:white;
+    background-color:  var(--text-color);
+    color:var(--bg-color);
      height: 100%;
     transition: background-color .25 ease-in-out ;
     -webkit-transition: background-color .25 ease-in-out ;
@@ -17,9 +16,9 @@
 }
 
 .light{
-    background-color: white;
+    background-color: var(--bg-color);
     height: 100%;
-    color:black;
+    color:var(--text-color);
     transition: background-color .25 ease-in-out ;
     -webkit-transition: background-color .25 ease-in-out ;
     -moz-transition: background-color .25 ease-in-out ;
