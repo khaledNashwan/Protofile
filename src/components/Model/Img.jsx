@@ -13,7 +13,7 @@ const Img = () => {
           <div className="content">
             <h2 className="font-bold text-center ">
               Khaled Nashwan <br />
-              <span>Front End</span>
+              <span>Front End | React Js </span>
             </h2>
           </div>
         </div>

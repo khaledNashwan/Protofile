@@ -1,44 +1,67 @@
 import React, {  useEffect, useState } from 'react'
-import './Darkmode.css'
-
+import {BsFillMoonFill, BsFillSunFill} from 'react-icons/bs'
 
 
 const Darkmode = () =>
 {
-  function getDefaultMode() {
-    const savedMode = localStorage.getItem("theme");
-    return savedMode ? savedMode : "light";
-  }
+     const [theme, settheme] = useState("dark")
 
-  const [theme, setTheme] = useState(getDefaultMode());
+const handleToggle = () => {
+  const newTheme = theme === "light" ? "dark" : "light";
+  settheme(newTheme);
+  storeUserSetPreference(newTheme);
+  document.body.dataset.theme = theme;
+};
 
-  useEffect(() => {
-    document.body.className = theme;
-    localStorage.setItem("theme", theme);
-  }, [theme]);
-
-  const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
+const storeUserSetPreference = (pref) => {
+ localStorage.setItem("theme", pref);
     }
-  }
+    
+    const getUserSetPreference = () => {
+      return localStorage.getItem("theme");
+    };
+
+    const getMediaQueryPreference = () => {
+      const mediaQuery = "(prefers-color-scheme: dark)";
+      const mql = window.matchMedia(mediaQuery);
+      const hasPreference = typeof mql.matches === "boolean";
+      if (hasPreference) {
+        return mql.matches ? "dark" : "light";
+      }
+    };
+
+
+    useEffect(() => {
+      const userSetPreference = getUserSetPreference();
+      const mediaQueryPreference = getMediaQueryPreference();
+      if (userSetPreference) {
+        settheme(userSetPreference);
+      } else {
+        settheme(mediaQueryPreference);
+      }
+      document.body.dataset.theme = theme;
+    }, [theme]);
 
   return (
-    <button className='bg-transparent' onClick={toggleTheme}>
-      {theme === "light" ? (
-        <div className="Moon">
-          <i class="uil uil-moon"></i>
-        </div>
-      ) : (
-        <div className="Sun">
-          <i class="uil uil-sun"></i>
-        </div>
-      )}
-    </button>
+    <>
+      <div className="themeBtn" onClick={handleToggle}>
+        {theme === "light" ? <BsFillMoonFill /> : <BsFillSunFill />}
+      </div>
+    </>
   );
 };
 
 export default Darkmode
+
+
+
+
+
+
+
+
+
+ 
+
+
 

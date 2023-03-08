@@ -10,9 +10,9 @@ import Nav from "../Nav/Nav";
 const Hero = () => {
   return (
     <>
-      <section id="Home">
-        <div className="flex justify-center items-center gap-12 max-lg:flex-col-reverse  mx-12  max-md:text-center">
-          <div>
+      <section className="section_hero " id="Home">
+        <div className="flex justify-center items-center gap-12 max-lg:flex-col-reverse  mx-12   max-md:text-center">
+          <div className="left_hero">
             <h1 className="font-extrabold flex items-center gap-4 text-3xl animate__animated animate__swing">
               Khaled Nashwan
               <img src={hand} alt="welcome" className="shake-lr" />
@@ -37,7 +37,7 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className="">
+          <div>
             <img className="img_anmi max-md:w-96" src={prof} alt="profile" />
           </div>
         </div>

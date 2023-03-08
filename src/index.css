@@ -14,8 +14,8 @@
   /*========== Font and typography ==========*/
   :root{
   --body-font: "Poppins", sans-serif;
-  --bg-color:white;
-  --text-color:#1a1919;
+--color-text-primary: #131616;
+--color-bg-primary: #E6EDEE;
 
   }
 
@@ -53,13 +53,29 @@ img {
 }
 
 section{
-  margin-top: 8rem;
-  height: 90vh;
+  height: auto;
 }
 
 
 .scroll__up{
   bottom: 3rem;
+}
+
+
+
+body{
+    background: var(--color-bg-primary);
+     color: var(--color-text-primary);
+}
+
+body[data-theme="light"] {
+--color-text-primary: #131616;
+--color-bg-primary: white;
+}
+
+body[data-theme="dark"] {
+--color-text-primary: #F2F5F7;
+--color-bg-primary: rgb(31, 29, 29);
 }
 
 
@@ -112,7 +128,6 @@ section{
 }
 
 
-
 button, [type='button']{
     background-color: transparent;
   color:black;
@@ -127,23 +142,21 @@ button, [type='button']:hover{
 }
 
 .line__color{
-  background-color: var(--text-color);
+  background-color: var(--color-text-primary);
 }
 
 .footer__color{
-  background-color: var(--text-color);
-  color:var(--bg-color);
+  background-color: var(--color-text-primary);
+  color:var(--color-bg-primary);
 }
 
+.number{
+    background-color: var(--color-text-primary);
+  color:var(--color-bg-primary);
+}
 
 .proje{
   position: relative;
-  flex: 1;
-  overflow: hidden;
-}
-
-.proje:hover {
-  flex: 3;
 }
 
 
@@ -348,9 +361,12 @@ button, [type='button']:hover{
   20%,
   40%,
   60% {
-    -webkit-transform: rotate(-10deg);
+            -webkit-transform: rotate(-10deg);
             transform: rotate(-10deg);
-  }
+            -moz-transform: rotate(-10deg);
+            -ms-transform: rotate(-10deg);
+            -o-transform: rotate(-10deg);
+}
   30%,
   50%,
   70% {
@@ -398,4 +414,10 @@ button, [type='button']:hover{
     -webkit-transform: rotate(8deg);
             transform: rotate(8deg);
   }
+}
+
+
+.section_About{
+  height: 100vh;
+  padding-top: 5rem;
 }

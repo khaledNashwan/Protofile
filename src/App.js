@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import ButtonTop from "./components/Model/ButtonTop";
 import Loader from "./components/Loader/Loader";
+import Footer from "./components/Footer";
+
 import About from "./Page/About";
 import Contact from "./Page/Contact";
 import Home from "./Page/Home";
@@ -23,12 +25,14 @@ function App() {
         <Loader />
       ) : (
         <div>
-          <Home />
+          <Home  />
           <About />
-            <Skills />
-            <Project />
-          <Contact />
-            <ButtonTop />
+          <Skills />
+          <Project />
+            <Contact />
+            <Footer />
+
+          <ButtonTop />
         </div>
       )}
     </>

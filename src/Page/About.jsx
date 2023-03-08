@@ -8,9 +8,11 @@ import SectionHeader from "../components/Model/SectionHeader";
 
 const About = () => {
   return (
-    <section className="max-md:h-auto max-lg:mb-32" id="About">
+    <section
+      className="max-md:h-auto max-lg:mb-32  section_About"
+      id="About"
+    >
       <SectionHeader sectionHeader="About" />
-
       <div className="flex justify-center gap-12 max-lg:flex-col items-center container mx-auto">
         <Img />
         <div className="flex flex-col gap-8">

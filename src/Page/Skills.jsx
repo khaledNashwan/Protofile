@@ -4,10 +4,10 @@ import Skill from "../components/Model/Skill";
 
 const Skills = () => {
   return (
-    <div id="skills">
-      <SectionHeader sectionHeader="Skills" />
-      <div class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <section id="skills" className=" pt-16">
+      <SectionHeader  sectionHeader="Skills" />
+      <div className="body-font">
+        <div className="container px-5 py-4 mx-auto flex flex-wrap">
           <Skill num="1" name="HTML" stage="Expert" icone="uil uil-html5" />
           <Skill num="2" name="CSS" stage="Me" icone="uil uil-css3-simple" />
           <Skill
@@ -44,7 +44,7 @@ const Skills = () => {
           <Skill num="9" name="redex" stage="Expert" icone="uil uil-html5" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,10 +1,20 @@
 
+.section_hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
   .img_anmi{
   position: relative;
   animation: up-and-down 5s linear infinite;
-  width: 500px;
+  width: 600px;
   -webkit-animation: up-and-down 5s linear infinite;
 }
+
 
   @keyframes up-and-down {
   0%,
