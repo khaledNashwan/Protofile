@@ -12,7 +12,16 @@ const Hero = () => {
     <>
       <section className="section_hero " id="Home">
         <div className="flex justify-center items-center gap-12 max-lg:flex-col-reverse  mx-12   max-md:text-center">
-          <div className="left_hero">
+          <div
+            className="left_hero"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
             <h1 className="font-extrabold flex items-center gap-4 text-3xl animate__animated animate__swing">
               Khaled Nashwan
               <img src={hand} alt="welcome" className="shake-lr" />
@@ -37,13 +46,36 @@ const Hero = () => {
               </a>
             </div>
           </div>
+
           <div>
-            <img className="img_anmi max-md:w-96" src={prof} alt="profile" />
+            <img
+              className="img_anmi max-md:w-96"
+              src={prof}
+              alt="profile"
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            />
           </div>
         </div>
-        <div className="absolute left-10 top-56 max-md:left-6 max-md:top-32 ">
+
+        <div
+          className="absolute left-10 top-56 max-md:left-6 max-md:top-32"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
           <HeaderSocials />
         </div>
+
         <a
           href="#contact"
           className="rotate-90 flex gap-2 absolute right-10 top-72 max-md:right-0  max-md:top-48"

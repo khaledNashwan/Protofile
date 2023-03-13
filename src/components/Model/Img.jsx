@@ -6,7 +6,16 @@ const Img = () => {
     
     return (
       <>
-        <div className="box__img">
+        <div
+          className="box__img"
+          data-aos="zoom-in-right"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
           <div className="img_box">
             <img src={profile} alt="profile" />
           </div>

@@ -27,14 +27,14 @@ const Nav = () => {
         href="#Project"
         className="bg-transparent p-2 px-4 rounded-full flex text-2xl hover:bg-black/40"
       >
-        <i class="uil uil-home"></i>
+        <i class="uil uil-file-minus"></i>{" "}
       </a>
 
       <a
         href="#contact"
         className="bg-transparent p-2 px-4 rounded-full flex text-2xl hover:bg-black/40"
       >
-        <i class="uil uil-book"></i>
+        <i class="uil uil-location-point"></i>
       </a>
     </nav>
   );

@@ -42,10 +42,16 @@ const Carousel  = () => {
             slidesPerView: 3,
             spaceBetween: 40,
           },
-
         }}
         modules={[Autoplay, Pagination]}
         className="mySwiper"
+        data-aos="fade-up-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
       >
         <SwiperSlide>
           <Pro

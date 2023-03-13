@@ -5,9 +5,19 @@ import Skill from "../components/Model/Skill";
 const Skills = () => {
   return (
     <section id="skills" className=" pt-16">
-      <SectionHeader  sectionHeader="Skills" />
+      <SectionHeader sectionHeader="Skills" />
       <div className="body-font">
-        <div className="container px-5 py-4 mx-auto flex flex-wrap">
+        <div
+          className="container px-5 py-4 mx-auto flex flex-wrap"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
           <Skill num="1" name="HTML" stage="Expert" icone="uil uil-html5" />
           <Skill num="2" name="CSS" stage="Me" icone="uil uil-css3-simple" />
           <Skill

@@ -4,7 +4,16 @@ import CardMap from './CardMap';
 const Map = () => {
   return (
     <>
-      <div className="lg:w-2/3 md:w-1/2 bg-slate-50 shadow-md rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+      <div
+        className="lg:w-2/3 md:w-1/2 bg-slate-50 shadow-md rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
         <iframe
           width="100%"
           height="100%"

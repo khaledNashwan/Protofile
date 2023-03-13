@@ -8,6 +8,13 @@ const FormMap = () => {
         action="https://formspree.io/f/xyyvrvbv"
         method="POST"
         className="lg:w-1/3 md:w-1/2 bg-slate-50 shadow-md flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 p-4 rounded-xl"
+        data-aos="fade-down"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
       >
         <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
           CONTACT

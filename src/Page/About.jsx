@@ -8,10 +8,7 @@ import SectionHeader from "../components/Model/SectionHeader";
 
 const About = () => {
   return (
-    <section
-      className="max-md:h-auto max-lg:mb-32  section_About"
-      id="About"
-    >
+    <section className="max-md:h-auto max-lg:mb-32  section_About" id="About">
       <SectionHeader sectionHeader="About" />
       <div className="flex justify-center gap-12 max-lg:flex-col items-center container mx-auto">
         <Img />
@@ -20,7 +17,16 @@ const About = () => {
 
           <AboutText />
 
-          <Button buttonName="Download CV">
+          <Button
+            buttonName="Download CV"
+            data-aos="zoom-in-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
             <i class="uil uil-file text-xl"></i>
           </Button>
         </div>
